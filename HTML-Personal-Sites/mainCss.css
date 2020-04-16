@@ -1,0 +1,35 @@
+/*------------------------------------tag-selectors-------------------------------------*/
+body {
+    background-color: #eaf6f6;
+}
+
+hr {
+    color: #DDDDDD;
+    border-style: dotted;
+    border-width: 5px 0 0 0;
+    width: 10%;
+}
+
+h3 {
+    color: #66b6b6;
+}
+
+h1 {
+    color: #66b6b6;
+}
+
+a:hover{
+    color: red;
+}
+
+/*------------------------------------class-selectors-------------------------------------*/
+
+.myImg{
+    border-radius: 100px;
+}
+
+
+
+
+/*------------------------------------id-selectors-------------------------------------*/
+
