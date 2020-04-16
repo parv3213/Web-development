@@ -6,6 +6,7 @@
 a{
     text-decoration: none;
     color: #11999E;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a:hover{
@@ -128,7 +129,7 @@ hr {
 }
 
 .footer-author {
-    margin: 20px;
+    margin: 40px auto 20px auto;
 }
 
 .margin-button{
