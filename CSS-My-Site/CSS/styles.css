@@ -3,6 +3,15 @@
 * {
     margin: 0px;
 }
+a{
+    text-decoration: none;
+    color: #11999E;
+}
+
+a:hover{
+    color: #f0a500;
+    text-shadow: 1px 1px lightslategrey;
+}
 
 body {
     text-align: center;
@@ -32,14 +41,13 @@ p {
     color: #40514E;
 }
 
-hr{
+hr {
     width: 10%;
     margin: 100px auto;
     border-style: dotted;
     border-width: 5px 0 0;
     color: #EAF6F6;
 }
-
 
 /* ------------------------------------------ class-selectors ------------------------------------------------ */
 
@@ -59,7 +67,6 @@ hr{
 .contact-me {
     width: 50%;
     margin: 100px auto;
-
     line-height: 2;
 }
 
@@ -73,7 +80,7 @@ hr{
     text-decoration: underline;
 }
 
-.profile-p{
+.profile-p {
     margin-top: 20px;
 }
 
@@ -95,7 +102,7 @@ hr{
 }
 
 .image-parv {
-    width: 15%;
+    width: 200px;
     height: 300px;
     border-radius: 100px;
     margin: 50px auto;
@@ -111,18 +118,28 @@ hr{
     margin-left: 30px;
 }
 
-.bottom-container{
+.bottom-container {
     background-color: #66BFBF;
     padding: 50px;
 }
 
-.footer-link{
+.footer-link {
     margin: 0 20px;
 }
 
-.footer-author{
+.footer-author {
     margin: 20px;
 }
 
+.margin-button{
+margin: 0px 0px 50px 0px;
+}
 
+.btn{
+    margin: 50px 0px;
+    border-radius: 10em;
+    background-color: #66BFBF;
+    padding: 10px 20px;
+    color: white;
+}
 /* ------------------------------------------ id-selectors ------------------------------------------------ */
