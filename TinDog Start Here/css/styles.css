@@ -1,0 +1,54 @@
+/*--------------------------------------- ID SELECTORS ---------------------------------------*/
+
+#title {
+    background-color: rgb(255, 0, 73);
+    color: white;
+    ;
+}
+
+/*--------------------------------------- CLASS SELECTORS ---------------------------------------*/
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+/* Navbar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* Download Button */
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+
+/*--------------------------------------- TAG SELECTORS ---------------------------------------*/
+
+h1 {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+body {
+    font-family: "Montserrat";
+    font-weight: 400;
+}
