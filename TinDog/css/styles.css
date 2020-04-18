@@ -1,0 +1,157 @@
+/*--------------------------------------- ID AND CLASS SELECTORS ---------------------------------------*/
+
+/* Navbar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* Download Button */
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Title image */
+
+#title {
+    background-color: #Ef8172;
+    color: white;
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+.title-image {
+    width: 60%;
+    position: absolute;
+    right: 20%
+}
+
+/* Feature Section */
+
+#features {
+    padding: 7% 10%;
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.features-align {
+    text-align: center;
+}
+
+.feature-box {
+    padding: 3%;
+}
+
+.feature-head-font {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.icon {
+    color: #ef8172;
+    padding: 5%;
+}
+
+.icon:hover {
+    color: #ff6c68;
+}
+
+/* Testemonial Section */
+
+#testimonials {
+    background-color: #Ef8172;
+    text-align: center;
+    color: #fff;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* Press Sectiom */
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* Pricing */
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+.pricing-col {
+    padding: 3% 2%;
+}
+
+/*--------------------------------------- TAG SELECTORS ---------------------------------------*/
+
+body {
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+h1 {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+h2 {
+    font-family: "Montserrat";
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/*--------------------------------------- Media Queries ---------------------------------------*/
+
+@media (max-width: 991px){
+    .title-image{
+        position: static;
+    }
+    .title-row{
+        text-align: center;
+    }
+
+}
