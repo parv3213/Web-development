@@ -120,6 +120,7 @@
     padding: 3% 2%;
 }
 
+/* CTA SECTION */
 #cta{
     background-color: #ff4c68;
     padding: 7% 15%;
@@ -133,6 +134,7 @@
     font-size: 3rem;
 }
 
+/* FOOTER SECTION */
 #footer{
     padding: 7% 15% 0;
     background-color: #fff;
