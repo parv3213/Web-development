@@ -46,5 +46,5 @@ function buttonAnimation(str) {
     document.querySelector("."+str).classList.add("pressed");
     setTimeout(function (){
         document.querySelector("."+str).classList.remove("pressed");
-    }, 500);
+    }, 100);
 }
