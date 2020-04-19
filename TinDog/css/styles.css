@@ -1,4 +1,7 @@
 /*--------------------------------------- ID AND CLASS SELECTORS ---------------------------------------*/
+.container-fluid {
+    padding: 7% 15%;
+}
 
 /* Navbar */
 
@@ -31,11 +34,12 @@
 /* Title image */
 
 #title {
+    text-align: left;
     background-color: #ff4c68;
     color: white;
 }
 
-.container-fluid {
+#title .container-fluid {
     padding: 3% 15% 7%;
 }
 
@@ -45,18 +49,19 @@
     right: 20%
 }
 
+.biggest-text {
+    font-family: "Montserrat";
+    line-height: 1.5;
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
 /* Feature Section */
 
 #features {
-    padding: 7% 10%;
     background-color: #fff;
     position: relative;
-    text-align: center;
     z-index: 1;
-}
-
-.features-align {
-    text-align: center;
 }
 
 .feature-box {
@@ -70,7 +75,7 @@
 }
 
 .icon {
-    color:  #ff4c68;
+    color: #ff4c68;
     padding: 5%;
 }
 
@@ -82,7 +87,6 @@
 
 #testimonials {
     background-color: #ff4c68;
-    text-align: center;
     color: #fff;
 }
 
@@ -92,15 +96,10 @@
     margin: 20px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-}
-
 /* Press Sectiom */
 
 #press {
     background-color: #ff4c68;
-    text-align: center;
     padding-bottom: 3%;
 }
 
@@ -113,7 +112,6 @@
 
 #pricing {
     padding: 100px;
-    text-align: center;
 }
 
 .pricing-col {
@@ -121,12 +119,12 @@
 }
 
 /* CTA SECTION */
-#cta{
+
+#cta {
     background-color: #ff4c68;
-    padding: 7% 15%;
-    text-align: center;
 }
-.cta-heading{
+
+.cta-heading {
     font-family: "Montserrat";
     font-weight: 900;
     color: #fff;
@@ -135,13 +133,12 @@
 }
 
 /* FOOTER SECTION */
-#footer{
-    padding: 7% 15% 0;
+
+#footer {
     background-color: #fff;
-    text-align: center;
 }
 
-.footer-icon{
+.footer-icon {
     padding: 0 1.5%;
 }
 
@@ -150,33 +147,29 @@
 body {
     font-family: "Montserrat";
     font-weight: 400;
+    text-align: center;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat";
-    font-weight: 900;
-    font-size: 3.5rem;
     line-height: 1.5;
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 p {
     color: #8f8f8f;
 }
 
-h2 {
-    font-family: "Montserrat";
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
 /*--------------------------------------- Media Queries ---------------------------------------*/
 
-@media (max-width: 991px){
-    .title-image{
+@media (max-width: 991px) {
+    .title-image {
         position: static;
     }
-    .title-row{
+    .title-row {
         text-align: center;
     }
-
 }
