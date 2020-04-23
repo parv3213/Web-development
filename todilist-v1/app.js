@@ -1,5 +1,6 @@
-const express = require("express");
-const bodyParser = require("body-parser");
+const express = require("./node_modules/express");
+const bodyParser = require("./node_modules/body-parser");
+const date = require(__dirname+"/date.js")
 
 const app = express();
 
@@ -9,24 +10,11 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-let todos = ["Buy Food", "Cook Food", "Eat Food"];
+const todos = ["Buy Food", "Cook Food", "Eat Food"];
 var workItems = [];
 
-app.get("/", (req, res) => {
-
-    const options = {
-        weekday: 'long',
-        month: "long",
-        day: "numeric"
-    }
-    const today = new Date();
-    const day = today.toLocaleDateString("en-US", options);
-    console.log(day);
-    res.render("list", { listTitle: day, todos: todos });
-});
-
-app.get("/work", (req, res) => {
-    res.render("list", { listTitle: "Work List", todos: workItems });
+app.get("/", (req, res) => {    
+    res.render("list", { listTitle: date.getDate(), todos: todos });
 });
 
 app.post("/", (req, res) => {
@@ -40,14 +28,21 @@ app.post("/", (req, res) => {
         res.redirect("/");
     }
 
-})
+});
+
+app.get("/work", (req, res) => {
+    res.render("list", { listTitle: "Work List", todos: workItems });
+});
 
 app.post("/work", (req, res) => {
     res.redirect("/work");
 });
 
+app.get("/about" ,(req,res) => {
+    res.render("about");
+});
 
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Server running on port 3000");
-})
+});

@@ -4,10 +4,14 @@
     min-height: 1000px;
 }
 
-/* .align{
+ .center-align{
+     margin: 0 auto;
+     text-align: center;
+ }
 
-    margin: auto 0;
-} */
+.paragraph-background{
+    background-color: #ffffd2;
+}
 
 .align-right {
     text-align: right;
