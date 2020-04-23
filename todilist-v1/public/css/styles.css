@@ -94,3 +94,8 @@
     border-radius: 100%;
     border-color: #ffffd2;
 }
+
+footer{
+    text-align: center;
+    padding: 10% 0 5%;
+}

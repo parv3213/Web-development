@@ -1,46 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include("header") -%>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    
-    <link href="https://fonts.googleapis.com/css?family=Comic+Neue|Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+<div class="heading-div">
+    <h1 class="heading shadow-lg"><%= listTitle %></h1>
+</div>
 
-<body class="body-color">
+<div class="todo-div">
+    <ul class="list-group shadow-lg ">
+        <% for(var i = 0; i<todos.length ; i++){ %>
+        <div id="border-fix-1" class=" list-group-item todo-div  todo-background">
+            <input class="checkbox-strikethrough" type="checkbox">
+            <p class="p-inline"><%= todos[i] %></p>
 
-    <div class="heading-div">
-        <h1 class="heading shadow-lg"><%= day %></h1>
-    </div>
-
-    <div class="todo-div">
-        <ul class="list-group shadow-lg ">
-            <% for(var i = 0; i<todos.length ; i++){ %>
-            <div id="border-fix-1" class=" list-group-item todo-div  todo-background">
-                <input class="checkbox-strikethrough" type="checkbox">
-                <p class="p-inline"><%= todos[i] %></p>
-
-            </div>
-            <% } %>
-        </ul>
-    </div>
-
-    <form action="/" class="list-group-item todo-div border-fix-2 form-background" method="post">
-        <div class="row">
-            <div class="col-10 input-todo-div">
-                <input class="input-todo" type="text" name="newTodo" placeholder="New Todo">
-            </div>
-            <div class="col-2">
-                <button class="add-button" name="submit" type="submit">+</button>
-            </div>
         </div>
+        <% } %>
+    </ul>
+</div>
 
-    </form>
-</body>
+<form action="/" class="list-group-item todo-div border-fix-2 form-background" method="post">
+    <div class="row">
+        <div class="col-10 input-todo-div">
+            <input class="input-todo" type="text" name="newTodo" placeholder="New Todo" autocomplete="off">
+        </div>
+        <div class="col-2">
+            <button class="add-button" name="list" type="submit" value="<%= listTitle %>">+</button>
+        </div>
+    </div>
 
-</html>
+</form>
+
+<%- include("footer") -%>
