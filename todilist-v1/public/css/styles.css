@@ -1,0 +1,96 @@
+.body-color {
+    /* background-color: #f9ed69; */
+    background-image: -webkit-linear-gradient(65deg,#eaffd0 50%,#f9ed69 50%);
+    min-height: 1000px;
+}
+
+/* .align{
+
+    margin: auto 0;
+} */
+
+.align-right {
+    text-align: right;
+}
+
+.heading-div {
+    text-align: center;
+    /* width: 500px; */
+    margin: 100px auto;
+    /* background-color: #024249; */
+}
+
+.heading {
+    display: inline-block;
+    font-family: 'Comic Neue', cursive;
+    width: 500px;
+    padding: 1% 2%;
+    background-color: #f38181;
+    color: #95e1d3;
+    border-radius: 10px;
+}
+
+.todo-div {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.todo-background {
+    background-color: #ffffd2;
+}
+
+.checkbox-strikethrough {
+    margin: 0 5% 0 0;
+    display: inline-block;
+    background-color: #ffffd2;
+}
+
+
+.checkbox-strikethrough:checked+p.p-inline {
+    text-decoration: line-through;
+}
+
+.p-inline {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    color: #3ec1d3;
+    font-size: 1.5rem;
+    line-height: 2;
+    margin: auto 0;
+}
+
+::placeholder {
+    text-align: center;
+    color: #aa96da;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#border-fix-1 {
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.border-fix-2 {
+    border-top: none;
+}
+
+.form-background {
+    background-color: #ffffd2;
+}
+
+.input-todo {
+    background-color: #ffffd2;
+    border: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.add-button {
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #f38181;
+    color: #95e1d3;
+    border-radius: 100%;
+    border-color: #ffffd2;
+}
