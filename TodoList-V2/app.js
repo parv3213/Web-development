@@ -11,8 +11,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //----------- Mongoose Connection -----------
-// mongoose.set("useFindAndModify", false);
-mongoose.connect("mongodb://localhost:27017/todolistDB", {
+mongoose.connect("mongodb+srv://Admin-Parv:test-123@cluster0-fxeex.mongodb.net/todolistDB", {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
@@ -119,5 +118,5 @@ app.post("/delete", (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log("Server running on port 3000");
+  console.log("Server running");
 });
