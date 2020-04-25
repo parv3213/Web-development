@@ -1,0 +1,42 @@
+<%- include("header") -%>
+
+<div class="heading-div">
+  <h1 class="heading shadow-lg"><%= listTitle %></h1>
+</div>
+
+<div class="todo-div">
+  <ul class="list-group shadow-lg">
+    <% items.forEach((item) => { %>
+    <div id="border-fix-1" class="list-group-item todo-div todo-background">
+      <form action="/delete" method="post">
+        <input
+          class="checkbox-strikethrough"
+          type="checkbox"
+          name="checkbox"
+          value="<%= item._id %>"
+          onChange="this.form.submit()"
+        />
+        <p class="p-inline">
+          <%= item.name; %>
+        </p>
+        <input type="hidden" name="listName" value="<%= listTitle %>" ></input>
+      </form>
+    </div>
+    <% }); %>
+  </ul>
+</div>
+
+<form action="/" class="list-group-item todo-div border-fix-2 form-background" method="post">
+  <div class="row">
+    <div class="col-10 input-todo-div">
+      <input class="input-todo" type="text" name="newItem" placeholder="New Todo" autocomplete="off" />
+    </div>
+    <div class="col-2">
+      <button class="add-button" name="list" type="submit" value="<%= listTitle %>">
+        +
+      </button>
+    </div>
+  </div>
+</form>
+
+<%- include("footer") -%>
