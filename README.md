@@ -1,4 +1,4 @@
-# web-development-bootcamp
+# Web-Development
 
 Following Dr. Angela Yu.
 
