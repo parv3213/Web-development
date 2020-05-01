@@ -4,7 +4,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
-const encrypt = require("mongoose-encryption");
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 //-------------------- basics --------------------
 const app = express();
@@ -19,7 +20,6 @@ const userScheme = new mongoose.Schema({
     password: String,
 });
 
-userScheme.plugin(encrypt, { secret: process.env.SECRET, encryptedFields: ["password"] });
 const User = new mongoose.model("User", userScheme);
 
 //-------------------- Routes --------------------
@@ -36,16 +36,18 @@ app.get("/register", (req, res) => {
 });
 
 app.post("/register", (req, res) => {
-    const newUser = new User({
-        email: req.body.username,
-        password: req.body.password,
-    });
-    newUser.save((e) => {
-        if (e) {
-            res.render(e);
-        } else {
-            res.render("secrets");
-        }
+    bcrypt.hash(req.body.password, saltRounds, (e, hash) => {
+        const newUser = new User({
+            email: req.body.username,
+            password: hash,
+        });
+        newUser.save((e) => {
+            if (e) {
+                res.render(e);
+            } else {
+                res.render("secrets");
+            }
+        });
     });
 });
 
@@ -57,9 +59,13 @@ app.post("/login", (req, res) => {
             res.send(e);
         } else {
             if (foundUser) {
-                if (foundUser.password === password) {
-                    res.render("secrets");
-                }
+                bcrypt.compare(password, foundUser.password, function (e, result) {
+                    if (result === true) {
+                        res.render("secrets");
+                    } else {
+                        res.send("Inccorect Password");
+                    }
+                });
             } else {
                 res.send("Username does not exists");
             }
