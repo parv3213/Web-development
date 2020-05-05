@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
-
 //Challenge:
 //1. Given that you can get the current time using:
-let time = new Date().toLocaleTimeString();
-console.log(time);
+
+// function renderTime() {}
+// setInterval(renderTime, 1000);
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
 //Show the latest time in the <h1> when the Get Time button
 //is pressed.
 
@@ -17,6 +19,6 @@ console.log(time);
 
 //e.g. uncomment the code below to see Hey printed every second.
 // function sayHi() {
-//   console.log("Hey");
+// 	console.log("Hey");
 // }
 // setInterval(sayHi, 1000);
