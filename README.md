@@ -2,6 +2,10 @@
 
 ### Following Dr. Angela Yu.
 
+#### [React](https://github.com/parv3213/Web-development/tree/master/React)
+
+    ->All the react related projects are in this folder
+
 ##### [⭐️Tindog Website](https://parv3213.github.io/Web-development/TinDog/index.html)
 
     ->A beautiful front-end similar to tinder🔥
