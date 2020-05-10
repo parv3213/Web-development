@@ -42,7 +42,7 @@
     ->About me! 👤
     ->Skills: HTML, CSS
 
-##### [HTML_PERSONAL_SITES]: (https://parv3213.github.io/Web-development/Practice/HTML-Personal-Sites/)
+##### [HTML_PERSONAL_SITES](https://parv3213.github.io/Web-development/Practice/HTML-Personal-Sites/)
 
     ->My resume 📃
     ->Skills: HTML, Basic CSS
