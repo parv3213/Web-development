@@ -2,9 +2,7 @@
 
 ### Following Dr. Angela Yu.
 
-1. 2.
-
-##### ⭐️Tindog Website: https://parv3213.github.io/Web-development/TinDog/index.html
+##### ⭐️[Tindog Website](https://parv3213.github.io/Web-development/TinDog/index.html)
 
     ->A beautiful front-end similar to tinder🔥
     ->Skills: HTML, CSS, Bootstrap
