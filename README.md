@@ -6,6 +6,11 @@
 
     ->All the react related projects are in this folder
 
+##### [⭐️Todo List (react)](https://parv3213.github.io/react-todo-list/)
+
+    ->A simple Todo-List🔥
+    ->Skills: React, HTML, CSS, Bootstrap
+
 ##### [⭐️Tindog Website](https://parv3213.github.io/Web-development/TinDog/index.html)
 
     ->A beautiful front-end similar to tinder🔥
